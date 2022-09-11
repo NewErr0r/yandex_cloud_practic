@@ -1,0 +1,11 @@
+#cloud-config
+#ssh_pwauth: no
+users:
+  - name: yc-user
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - "${ssh_key}"
+runcmd:
+  - sudo echo -e "toor\ntoor\n" | passwd
