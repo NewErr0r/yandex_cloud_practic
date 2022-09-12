@@ -4,7 +4,7 @@ Practic deploy infrastructure on yandex cloud by Terraform
 
 Результатом запуска terraform apply будет следующий вывод:
 ![Image alt](https://github.com/NewErr0r/yandex_cloud_practic/blob/main/images/Connectin_public_ip.png)
-14 созданный ресурсов и команды для подключения по глобальным ip-адресам
+14 созданных ресурсов и команды для подключения по глобальным ip-адресам
 
 ![Image alt](https://github.com/NewErr0r/yandex_cloud_practic/blob/main/images/VMs.png)
 
