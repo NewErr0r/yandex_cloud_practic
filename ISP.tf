@@ -17,7 +17,7 @@ resource "yandex_compute_instance" "isp" {
     }
 
     network_interface {
-        subnet_id   = "e9b9iosa2umis05ld5gu"    # default-ru-central1-a
+        subnet_id   = var.default_subnet    
         ip_address  = "10.128.0.100"
         nat         = var.nat
     }

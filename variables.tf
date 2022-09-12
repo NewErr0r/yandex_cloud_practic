@@ -33,3 +33,8 @@ variable "nat" {
     default = true
   
 }
+
+variable "default_subnet" {
+    type    = string
+    default = "e9b9iosa2umis05ld5gu"    # default-ru-central1-a
+}
