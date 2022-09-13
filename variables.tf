@@ -10,7 +10,12 @@ variable "cores" {
 
 variable "memory" {
     type    = number
-    default = 2
+    default = 1
+}
+
+variable "core_fraction" {
+    type    = number    
+    default = 20        # %CPU 
 }
 
 variable "rtr-l_image_id" {
@@ -25,7 +30,7 @@ variable "rtr-r_image_id" {
 
 variable "disk_size" {
     type    = number
-    default = 20
+    default = 10
 }
 
 variable "nat" {
