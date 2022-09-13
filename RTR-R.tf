@@ -5,14 +5,15 @@ resource "yandex_compute_instance" "rtr-r" {
     zone        = var.zone
 
     resources {
-        cores   = var.cores
-        memory  = var.memory
+        cores         = var.cores
+        memory        = var.memory
+        core_fraction = var.core_fraction
     }
 
     boot_disk {
         initialize_params {
-            image_id    = var.rtr-r_image_id
-            size        = var.disk_size
+            image_id      = var.rtr-r_image_id
+            size          = var.disk_size
         }
     }
 
